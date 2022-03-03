@@ -2,15 +2,12 @@
 
 int cbinsearch(int *arr, int size, int value) {
   int k = 0;
-  for (int i = 0; i < size - 1; i++) {
+  for (int i = 0; i < size; i++) {
     if (arr[i] == value) {
       k++;
     }
   }
   if (k > 0) {
     return k;
-  }
-  else {
-    return 0;
-  }
+  } else { return 0; }
 }
